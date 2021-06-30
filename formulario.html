@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Estilo/formulario.css">
+    <script src="validador.js"></script>
+</head>
+<body>
+    <a href="menu.html">Volver</a>
+    <div class="contenedor">
+        <div class="contenido">
+            <form action="" method="GET" class="formulario">
+        <h1>Formulario registro</h1>
+
+        <form method="POST" id="formulario1" action="#">
+            <table border="0">
+                <tr>
+                    <td><label>Nombre</label></td>
+                    <td><input type="text" name="txtNombre" value="" required="" 
+                        id="id_txtNombre"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Apellido</label></td>
+                    <td><input type="text" name="txtApellido" value="" required="" 
+                        id="id_txtApellido" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="id_txtEmail">Email</label></td>
+                    <td><input type="email" name="txtEmail" value="" id="id_txtEmail"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Contraseña</label></td>
+                    <td><input type="text" name="txtContrasena" value="" required="" 
+                        id="id_txtContrasena" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Repetir Contraseña</label></td>
+                    <td><input type="text" name="txtRepetirContrasena" value="" required="" 
+                        id="id_txtRepetirContrasena" />
+                    </td>
+                </tr>
+                </tbody>
+            </table><br>
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>    
+                <input type="submit" class="button" id="enviar" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="validador.js"></script>
+</body>
+</html>
